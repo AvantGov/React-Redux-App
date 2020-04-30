@@ -1,25 +1,35 @@
 // * dependencies:
 import React from 'react';
+import { connect } from 'react-redux';
+
 
 // * components:
-import ButtonContainer from './components/ButtonContainer'
-import Header from './components/Header'
+import ButtonContainer from './components/ButtonContainer';
+import Header from './components/Header';
 import QuoteContainer from './components/QuoteContainer';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
 
 
 
-function App() {
+function App(props) {
 
-  const showQuote = true 
+  const hasData = props.hasData 
+  console.log('app props:', props)
 
   return (
     <div className="App">
       <Header />
-      {showQuote ? <QuoteContainer /> : <ButtonContainer />}
+      {hasData ? <QuoteContainer /> : <ButtonContainer />}
       <Footer />
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    isFetching: state.isFetching,
+    hasData: state.hasData
+  }
+}
+
+export default connect(mapStateToProps, {})(App);
