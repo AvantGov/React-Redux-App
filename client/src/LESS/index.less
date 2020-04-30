@@ -54,6 +54,8 @@ Html{
 
 @title: 'Bungee Shade', cursive;
 @subheader: 'Bungee Inline', cursive;
+@body: 'Bungee', cursive;
+@avant: 'Libre Barcode 39 Extended Text', cursive;
 
 @lightblue: #04DBDC;
 @darkturquois: #0EA9CA;
@@ -62,4 +64,68 @@ Html{
 @steelblue: #407E84;
 
 // ! mixins: 
+
+.App {
+	background-color: @darkturquois;
+}
+
+
+.header-container__img-container {
+	background-image: url(../img/corporate-1038x350.jpg);
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 5px solid @tan;
+	box-shadow: 0px 13px 25px 10px @lightblue;
+	
+}
+
+.img-container__title {
+	text-align: center;
+	color: @tan;
+	font-size: 5rem;
+	font-family: @subheader;
+	-webkit-text-stroke-width: 2px;
+  	-webkit-text-stroke-color: @black;
+}
+
+
+
+.header-container__text-container {
+	height: 1000px;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	
+
+	
+	p {
+		font-family: @body;
+		color: @black;
+		font-size: 2.3rem;
+		line-height: 150%;
+		text-align: center;
+		text-justify: center;
+	}
+	
+	.why {
+		font-size: 6rem;
+		color: @black;
+		font-family: @title;
+	}
+
+	.because {
+		font-size: 3rem;
+		font-family: @title;
+	}
+
+}
+
 

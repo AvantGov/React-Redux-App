@@ -128,3 +128,52 @@ table {
 Html {
   font-size: 62.5%;
 }
+.App {
+  background-color: #0EA9CA;
+}
+.header-container__img-container {
+  background-image: url(../img/corporate-1038x350.jpg);
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #DDCDAC;
+  box-shadow: 0px 13px 25px 10px #04DBDC;
+}
+.img-container__title {
+  text-align: center;
+  color: #DDCDAC;
+  font-size: 5rem;
+  font-family: 'Bungee Inline', cursive;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #0E0E0E;
+}
+.header-container__text-container {
+  height: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-container__text-container p {
+  font-family: 'Bungee', cursive;
+  color: #0E0E0E;
+  font-size: 2.3rem;
+  line-height: 150%;
+  text-align: center;
+  text-justify: center;
+}
+.header-container__text-container .why {
+  font-size: 6rem;
+  color: #0E0E0E;
+  font-family: 'Bungee Shade', cursive;
+}
+.header-container__text-container .because {
+  font-size: 3rem;
+  font-family: 'Bungee Shade', cursive;
+}
