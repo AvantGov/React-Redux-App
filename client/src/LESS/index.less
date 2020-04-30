@@ -116,13 +116,18 @@ Html{
 	
 	.why {
 		font-size: 6rem;
-		color: @black;
+		color: @lightblue;
 		font-family: @title;
+		-webkit-text-stroke-width: 1.5px;
+  		-webkit-text-stroke-color: @black;
 	}
 
 	.because {
 		font-size: 3rem;
 		font-family: @title;
+		color: @tan;
+		-webkit-text-stroke-width: 1.5px;
+  		-webkit-text-stroke-color: @black;
 	}
 
 }
@@ -160,6 +165,51 @@ Html{
 		-o-animation-duration: 1s;
 		animation-duration: 1s;
 }
+
+
+.quote-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	div {
+		width: 800px;
+		height: 150px;
+		border: 3px dashed @tan;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		h1 {
+			font-family: @body;
+			font-size: 2.5rem;
+			color: @tan;
+			text-align: center;
+			text-justify: center;
+			-webkit-text-stroke-width: 1.5px;
+  			-webkit-text-stroke-color: @black;
+		}
+	}
+
+	.quote-container__instruction-lede {
+		margin-top: 3%;
+		margin-bottom: 1%;
+		font-family: @title;
+		font-size: 3rem;
+		color: @lightblue;
+		-webkit-text-stroke-width: 1.5px;
+  		-webkit-text-stroke-color: @black;
+	}
+
+	.quote-container__instruction {
+		font-family: @subheader;
+		font-size: 1.7rem;
+	}
+}
+
+
 
 
 .footer {

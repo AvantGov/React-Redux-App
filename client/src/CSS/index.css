@@ -169,12 +169,17 @@ Html {
 }
 .header-container__text-container .why {
   font-size: 6rem;
-  color: #0E0E0E;
+  color: #04DBDC;
   font-family: 'Bungee Shade', cursive;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #0E0E0E;
 }
 .header-container__text-container .because {
   font-size: 3rem;
   font-family: 'Bungee Shade', cursive;
+  color: #DDCDAC;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #0E0E0E;
 }
 .button-container {
   margin: 0% auto;
@@ -203,6 +208,43 @@ Html {
   -ms-animation-duration: 1s;
   -o-animation-duration: 1s;
   animation-duration: 1s;
+}
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.quote-container div {
+  width: 800px;
+  height: 150px;
+  border: 3px dashed #DDCDAC;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quote-container div h1 {
+  font-family: 'Bungee', cursive;
+  font-size: 2.5rem;
+  color: #DDCDAC;
+  text-align: center;
+  text-justify: center;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #0E0E0E;
+}
+.quote-container .quote-container__instruction-lede {
+  margin-top: 3%;
+  margin-bottom: 1%;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 3rem;
+  color: #04DBDC;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #0E0E0E;
+}
+.quote-container .quote-container__instruction {
+  font-family: 'Bungee Inline', cursive;
+  font-size: 1.7rem;
 }
 .footer {
   height: 150px;

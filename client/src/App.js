@@ -11,7 +11,7 @@ import Footer from './components/Footer'
 
 function App() {
 
-  const showQuote = false 
+  const showQuote = true 
 
   return (
     <div className="App">
