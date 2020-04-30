@@ -5,6 +5,7 @@ import React from 'react';
 import ButtonContainer from './components/ButtonContainer'
 import Header from './components/Header'
 import QuoteContainer from './components/QuoteContainer';
+import Footer from './components/Footer'
 
 
 
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       <Header />
       {showQuote ? <QuoteContainer /> : <ButtonContainer />}
+      <Footer />
     </div>
   );
 }

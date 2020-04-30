@@ -65,16 +65,15 @@ Html{
 
 // ! mixins: 
 
-.App {
+#root {
 	background-color: @darkturquois;
 }
 
 
 .header-container__img-container {
 	background-image: url(../img/corporate-1038x350.jpg);
-	width: 100%;
 	height: 300px;
-	object-fit: cover;
+	object-fit: fill;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -128,4 +127,51 @@ Html{
 
 }
 
+.button-container {
 
+	
+	margin: 0% auto;
+	display: flex;
+	flex-direction: column;
+
+	img {
+		margin: 0 auto;
+		width: 350px;
+		height: 350px;
+	}
+
+	h2 {
+		font-family: @title;
+		font-size: 5rem;
+		margin: 0 auto;
+		margin-bottom: 2%;
+	}
+}
+
+#bounce:target{
+		-webkit-animation-name: bounce;
+		-moz-animation-name: bounce;
+		-ms-animation-name: bounce;
+		-o-animation-name: bounce;
+		animation-name: bounce;
+		-webkit-animation-duration: 1s;
+		-moz-animation-duration: 1s;
+		-ms-animation-duration: 1s;
+		-o-animation-duration: 1s;
+		animation-duration: 1s;
+}
+
+
+.footer {
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top:  4px dashed @tan;
+	margin-top: 2%;
+
+	h1 {
+		font-family: @avant;
+		font-size: 3rem;
+	}
+}

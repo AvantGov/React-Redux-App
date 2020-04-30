@@ -128,14 +128,13 @@ table {
 Html {
   font-size: 62.5%;
 }
-.App {
+#root {
   background-color: #0EA9CA;
 }
 .header-container__img-container {
   background-image: url(../img/corporate-1038x350.jpg);
-  width: 100%;
   height: 300px;
-  object-fit: cover;
+  object-fit: fill;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,4 +175,44 @@ Html {
 .header-container__text-container .because {
   font-size: 3rem;
   font-family: 'Bungee Shade', cursive;
+}
+.button-container {
+  margin: 0% auto;
+  display: flex;
+  flex-direction: column;
+}
+.button-container img {
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+}
+.button-container h2 {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 5rem;
+  margin: 0 auto;
+  margin-bottom: 2%;
+}
+#bounce:target {
+  -webkit-animation-name: bounce;
+  -moz-animation-name: bounce;
+  -ms-animation-name: bounce;
+  -o-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.footer {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 4px dashed #DDCDAC;
+  margin-top: 2%;
+}
+.footer h1 {
+  font-family: 'Libre Barcode 39 Extended Text', cursive;
+  font-size: 3rem;
 }

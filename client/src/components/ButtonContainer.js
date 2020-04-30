@@ -10,14 +10,13 @@ const ButtonContainer = (props) => {
 
     return (
         <div className='button-container'>
-            <React.Fragment>
-                <img 
-                    className='button-container__img' 
-                    src={buttonImg} 
-                    alt='generate-button' 
-                />
-                <h2 className='button-container__text'>SAVE THE COMPANY</h2>
-            </React.Fragment>
+            <img 
+                
+                className='button-container__img' 
+                src={buttonImg} 
+                alt='generate-button' 
+            />
+            <h2 className='button-container__text'>SAVE THE COMPANY</h2>
         </div>
     )
 }
