@@ -260,7 +260,22 @@ Html {
   font-family: 'Libre Barcode 39 Extended Text', cursive;
   font-size: 3rem;
 }
-@media (min-height: 700px) {
+@media (max-width: 900px) {
+  .quote-container div {
+    width: 450px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .quote-container .quote-container__instruction-lede {
+    margin-bottom: 5%;
+  }
+  .quote-container .quote-container__instruction {
+    text-align: center;
+    text-justify: center;
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 750px) {
   .header-container__text-container {
     height: 1500px;
   }
