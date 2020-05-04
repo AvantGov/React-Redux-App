@@ -22,7 +22,7 @@ export default (state = initialState, action) => {
                 ...state,
                 isFetching: false,
                 hasData: true,
-                data: action.payload.data[0]
+                data: action.payload.data
             }
         case FETCHING_BS_FAILURE:
             console.log('there was an error on the promise')
